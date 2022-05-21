@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <header>
+      <section class="logo-section">
+        <img src="./resources/Vector.png" alt="Alura Logo" />
+      </section>
+    </header>
+    <main>
+      <div class="msg-btn-section">
+        <section class="Message-section">
+          <textarea placeholder="Ingrese su texto aquí" class="msg"></textarea>
+
+          <div class="warning">Solo letras minusculas y sin acentos</div>
+        </section>
+        <section class="btn-section">
+          <input type="button" value="Encrypt" class="enc-btn" />
+          <input type="button" value="Decrypt" class="dec-btn" />
+        </section>
+      </div>
+
+      <section class="final-msg">
+        <div class="img-section">
+          <img src="./resources/Muñeco.svg" alt="Muñeco" class="dolly-img" />
+        </div>
+        <div class="no-msg-section">
+          <h3>Ningun mensaje fue encontrado</h3>
+          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <p class="dec-text"></p>
+        <div class="btn-container">
+          <button class="copy-btn" style="display: none">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
